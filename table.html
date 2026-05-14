@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📊 Table Generator</h1>
+        <div class="input-group">
+            <input type="text" id="nameInput" placeholder="Name">
+            <input type="text" id="roleInput" placeholder="Job">
+            <button onclick="addRow()">Add</button>
+        </div>
+
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Job</th>
+                    <th>Delet</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+        <a href="index.html" class="back-btn">← Back To main</a>
+    </div>
+
+    <script src="table.js"></script>
+</body>
+</html>
